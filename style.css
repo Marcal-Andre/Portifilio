@@ -38,12 +38,11 @@ body{
 .navbar a:houver{
     color: #0ef;
 }
-,home{
+.home{
     position: relative;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(Purple Illustrated Mountain Desktop Wallpaper.png) no-repeat; 
     background-size: cover;
     background-position: center;
     display: flex;
