@@ -21,12 +21,13 @@ body{
 }
 .logo{
     position: relative;
-    font-size: 25px;
+    font-size: 40px;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
     cursor: default;
-    animation: slideight 1s ease forwards;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 .navbar a {
     display: inline-block;
@@ -36,14 +37,14 @@ body{
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-    opacity: 30;
+    opacity: 0;
     animation: slideTip .5s ease forwards;
 
 }
 .navbar a:houver{
     color: #0ef;
 }
-.home{
+.home {
     position: relative;
     width: 100%;
     justify-content: space-between;
@@ -62,8 +63,11 @@ body{
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
+    opacity: 0;
+    animation: sladeBottom 1s ease forwards;
+    animation-delay: .7s;
 }
-.home-content h3:ntb-of-type(2){
+.home-content h3:nth-of-type(2){
     margin-bottom: 30px;
 
 }
@@ -79,7 +83,7 @@ body{
     font-size: 20px;
 
 }
-home-sci a {
+.home-sci a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -131,8 +135,20 @@ home-sci a {
 }
 @keyframes slideTop{
     0% {
-        transform: translateY(-100px);
-        opacity: 0;
+        transform: translateY(100px);
+        opacity: 1;
+
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+}
+@keyframes slideBottom{
+    0% {
+        transform: translateY(100px);
+        opacity: 1;
 
     }
     100% {
