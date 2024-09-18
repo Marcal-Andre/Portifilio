@@ -37,7 +37,8 @@ body{
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-    animation: slideTip .5s ease forwards;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
 
 }
 .navbar a:houver{
@@ -62,8 +63,8 @@ body{
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
-    animation: sladeBottom 1s ease forwards;
     opacity: 0;
+    animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
 }
 .home-content h3:nth-of-type(2){
@@ -78,7 +79,7 @@ body{
     font-weight: 700;
     margin: -3px 0;
     opacity: 0;
-    animation: slideRight 1s ease forwads;
+    animation: slideRight 1s ease forwards;
     animation-delay: 1s;
 }
 .home-contet p {
@@ -100,6 +101,10 @@ body{
     font-size: 20px;
     color: #0ef;
     text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2 * var(--i));
     margin: 30px 15px 30px 0;
 }
 .home-sci a:hover {
@@ -120,13 +125,17 @@ body{
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, ;
 
 }
 .btn-box:hover{
     box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, 0 0 50px #0ef, 0 0 100px #0ef, 0 0 200px #0ef,   
 }
 
-@keyframes slideRight{
+@keyframes SlideRight{
     0% {
         transform: translateX(-100px);
         opacity: 0;
@@ -138,10 +147,11 @@ body{
 
     }
 }
-@keyframes slideTop{
+
+@keyframes SlideTop{
     0% {
         transform: translateY(100px);
-        opacity: 1;
+        opacity: o;
 
     }
     100% {
@@ -150,10 +160,10 @@ body{
 
     }
 }
-@keyframes slideBottom {
+@keyframes SlideBottom {
     0% {
         transform: translateY(-100px);
-        opacity: 1;
+        opacity: 0;
 
     }
     100% {
@@ -162,7 +172,7 @@ body{
 
     }
 }
-@keyframes slideLeft{
+@keyframes SlideLeft{
     0% {
         transform: translateX(-100px);
         opacity: 0;

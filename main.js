@@ -1,5 +1,5 @@
-var typed= new Typed(".text", {
-    strings: ["Frontend Developer" , "Youtuber" , "Web Developer"],
+var typed= new typed(".text", {
+    Strings: ["Frontend Developer" , "Youtuber" , "Web Developer"],
     typeSeed: 100,
     backSpeed: 100,
     backDelay: 1000,
