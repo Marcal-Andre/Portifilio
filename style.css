@@ -41,7 +41,9 @@ body {
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+    opacity: 0;
     animation: slideTop .5s ease forwards;
+
 
 }
 
@@ -74,7 +76,7 @@ body {
     animation-delay: .7s;
 }
 
-.home-content h3:nth-of-type(2) {
+.home-content h3:nth-of-type(2){
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
@@ -89,6 +91,7 @@ body {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
+    opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -163,6 +166,18 @@ body {
     }
 }
 
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
 @keyframes slideTop {
     0% {
         transform: translateY(100px);
@@ -187,14 +202,3 @@ body {
     }
 }
 
-@keyframes slideLeft {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
