@@ -146,7 +146,6 @@ body {
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, ;
-
 }
 
 
@@ -159,7 +158,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
-
 }
 
 about-img img{
