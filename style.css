@@ -82,7 +82,6 @@ body {
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
-
 }
 
 .home-content h3 span {
@@ -103,7 +102,6 @@ body {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
-
 }
 
 .home-sci a {
