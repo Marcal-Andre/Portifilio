@@ -58,7 +58,7 @@ body {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background-image: url('./assets/img/pixelcut-export.png');
+    background-image: url('assets/img/pixelcut-export.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
