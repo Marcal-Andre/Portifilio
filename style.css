@@ -8,6 +8,7 @@
 body {
     color: #ededed;
     background: #275778;
+    overflow-x: hidden;
 }
 
 .header {
@@ -21,6 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+
 }
 
 .logo {
@@ -45,8 +47,6 @@ body {
     opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
-
-
 }
 
 .navbar a:houver {
@@ -164,6 +164,10 @@ about-img img{
 
 .about-text h2{
     font-size: 60px;
+    font-weight: 700;
+    color: #0ef;
+    margin-bottom: 20px;
+    animation: slideRight 1s ease forwards;
 }
 
 .about-text h2 span{
@@ -218,3 +222,5 @@ about-img img{
         opacity: 1;
     }
 }
+
+
